@@ -1,31 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-// () => { }
-  // component =html +css +js
-
-const MyComponent = () => {
-  return(
-    <div> eric & hoidanit update</div>
-  )
-}
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import MyComponent from "./components/learn/MyComponent";
+import SecondComponent from "./components/learn/SecondComponent";
 
 const App = () => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-//function myFunction() {
-//  console.log(">>> run my function")
-// }
+  //function myFunction() {
+  //  console.log(">>> run my function")
+  // }
 
-const myFunction = () => {
-  console.log(">>> run my arrow function")
-}
+  const myFunction = () => {
+    console.log(">>> run my arrow function");
+  };
 
-myFunction();
-
-
+  myFunction();
 
   return (
     <>
@@ -38,7 +29,8 @@ myFunction();
         </a>
       </div>
       <h1>Hello word</h1>
-      <MyComponent/>
+      <MyComponent />
+      <SecondComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -51,7 +43,7 @@ myFunction();
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
