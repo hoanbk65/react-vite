@@ -4,10 +4,12 @@
 // fragment
 import "./style.css";
 
+// const hoidanit = 1312; //number
+const hoidanit = [1, 2, 3];
 const MyComponent = () => {
   return (
     <>
-      <div> eric & hoidanit update</div> // tag
+      <div> {JSON.stringify(hoidanit)} & hoidanit update</div> // tag
       <div className="child" style={{ borderRadius: "10px" }}>
         child
       </div>
